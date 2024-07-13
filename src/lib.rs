@@ -69,7 +69,7 @@ impl Color {
                 let b = (h & 0xFF) as u8;
                 format!("48;2;{};{};{}", r, g, b)
             }
-            _ => (self.to_ansi_code().parse::<u8>().unwrap() + 10).to_string(),
+            _ => (self.to_ansi_code().parse::<u8>().unwrap_or(30) + 10).to_string(),
         }
     }
 }
