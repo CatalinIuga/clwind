@@ -1,7 +1,11 @@
 [package]
 name = "clwind"
 description = "TailwindCSS like utility for CLI"
+keywords = ["cli", "colors", "utility", "tailwindcss"]
+categories = ["command-line-utilities"]
 authors = ["Catalin Iuga"]
+repository = "https://github.com/CatalinIuga/clwind/"
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
 
