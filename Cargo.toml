@@ -1,0 +1,8 @@
+[package]
+name = "clwind"
+description = "TailwindCSS like utility for CLI"
+authors = ["Catalin Iuga"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
