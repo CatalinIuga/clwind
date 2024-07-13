@@ -23,11 +23,12 @@ pub enum Color {
     Rgb(u8, u8, u8),
     /// 256-color palette index.
     Color256(u8),
-    // Hexadecimal color code.
+    /// Hexadecimal color code.
     Hex(u32),
 }
 
 impl Color {
+    /// ## Builds the ANSI escape code for the specified color.
     fn to_ansi_code(self) -> String {
         match self {
             Color::Black => "30",
@@ -59,6 +60,7 @@ impl Color {
         .to_string()
     }
 
+    /// ## Builds the ANSI escape code for the specified background color.
     fn to_bg_ansi_code(self) -> String {
         match self {
             Color::Rgb(r, g, b) => format!("48;2;{};{};{}", r, g, b),
@@ -88,6 +90,7 @@ pub enum Style {
 }
 
 impl Style {
+    /// ## Builds the ANSI escape code for the specified style.
     fn to_ansi_code(self) -> String {
         match self {
             Style::Bold => "1",
@@ -797,18 +800,22 @@ impl CLW {
         self.font(Style::Strikethrough)
     }
 
+    /// ## Prints the styled text to the standard output.
     pub fn print(&self) {
         print!("{}", self);
     }
 
+    /// ## Prints the styled text to the standard output with a newline.
     pub fn println(&self) {
         println!("{}", self);
     }
 
+    /// ## Prints the styled text to the standard error.
     pub fn eprint(&self) {
         eprint!("{}", self);
     }
 
+    /// ## Prints the styled text to the standard error with a newline.
     pub fn eprintln(&self) {
         eprintln!("{}", self);
     }
