@@ -1,6 +1,6 @@
 # clwind - TailwindCSS-ish API for you CLI text
 
-ANSII color codes are a pain to remember, and just like plain CSS, it can take more time to write than it should. This is a simple API that allows you to add colors and styles to your CLI text with a TailwindCSS-like syntax.
+ANSII color codes are a pain to remember, and just like plain CSS, it can take more time to write than it should. This is a simple utility that allows you to add colors and styles to your CLI text with a TailwindCSS-like syntax.
 
 ## Installation
 
