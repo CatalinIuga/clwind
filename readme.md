@@ -30,7 +30,7 @@ fn main() {
 
 ### Colors
 
-- Variants: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`; and the `bright_` prefixes for each of them.
+- Base colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`; and the `bright` variants for each of them.
 - Hex: `Hex(0xf2f2f2)`
 - RGB: `RGB(255, 255, 255)`
 - 256: `Color256(255)`
