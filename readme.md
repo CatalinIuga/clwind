@@ -4,7 +4,7 @@ ANSII color codes are a pain to remember, and just like plain CSS, it can take m
 
 ## Installation
 
-Get the module from []()
+Get the module from [crates.io](https://crates.io/crates/clwind)
 
 ```bash
 cargo add clwind
